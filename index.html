@@ -917,153 +917,156 @@
 
 
 
-  <!-- Paket Nasi Box (Non Ayam) & Nasi Box Ayam - Side by Side -->
+  <!-- Paket Nasi Box (Non Ayam) & Nasi Box Ayam - Side by Side Presisi -->
 <section id="nasi-box" class="mb-12 scroll-mt-28">
-  <!-- Header Paket Nasi Box & Nasi Box Ayam - Side by Side -->
-<div class="grid md:grid-cols-2 gap-6 mb-8">
   
-  <!-- Judul Kiri: Nasi Box Reguler -->
-  <div class="text-center">
-    <div class="flex items-center justify-center gap-3 mb-2">
-      <i class="fas fa-box-open text-[#d43f7a] text-2xl"></i>
-      <h2 class="text-2xl md:text-3xl font-serif-alt font-bold text-gray-800">Paket Nasi Box</h2>
-    </div>
-    <div class="w-24 h-0.5 bg-gradient-to-r from-[#d43f7a] to-[#e8669c] mx-auto rounded-full"></div>
-    <p class="text-sm text-gray-500 mt-2">*Belum termasuk masakan kambing</p>
-  </div>
-  
-  <!-- Judul Kanan: Nasi Box Ayam -->
-  <div class="text-center">
-    <div class="flex items-center justify-center gap-3 mb-2">
-      <i class="fas fa-drumstick-bite text-[#d43f7a] text-2xl"></i>
-      <h2 class="text-2xl md:text-3xl font-serif-alt font-bold text-gray-800">Paket Nasi Box Ayam</h2>
-    </div>
-    <div class="w-24 h-0.5 bg-gradient-to-r from-[#d43f7a] to-[#e8669c] mx-auto rounded-full"></div>
-    <p class="text-sm text-gray-500 mt-2">🍗 Ayam Bakar Pilihan • Bumbu Spesial Rumahan</p>
-  </div>
-  
-</div>
-  
+  <!-- Header + Card dalam 1 grid yang sama -->
   <div class="grid md:grid-cols-2 gap-6">
     
-    <!-- CARD KIRI: Nasi Box Reguler (Non Ayam) -->
-    <div class="bg-white rounded-2xl shadow-lg hover-lift border border-pink-100 overflow-hidden">
-      <div class="relative h-40 overflow-hidden">
-        <img src="image/nasibox_esklusif.png" 
-             alt="Nasi Box Eksklusif" 
-             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3">
-          <span class="text-white text-xs font-semibold">🍱 Nasi Box Eksklusif</span>
+    <!-- KOLOM KIRI: Nasi Box Reguler -->
+    <div>
+      <!-- Header Kiri -->
+      <div class="text-center mb-6">
+        <div class="flex items-center justify-center gap-3 mb-2">
+          <i class="fas fa-box-open text-[#d43f7a] text-2xl"></i>
+          <h2 class="text-2xl md:text-3xl font-serif-alt font-bold text-gray-800">Paket Nasi Box</h2>
         </div>
-        <div class="absolute top-3 right-3 bg-[#d43f7a]/90 backdrop-blur px-2 py-1 rounded-full">
-          <span class="text-white text-[10px] font-semibold"><i class="fas fa-leaf"></i> Eksklusif</span>
-        </div>
+        <div class="w-24 h-0.5 bg-gradient-to-r from-[#d43f7a] to-[#e8669c] mx-auto rounded-full"></div>
+        <p class="text-sm text-gray-500 mt-2">*belum termasuk masakan kambing</p>
       </div>
-      <div class="p-5">
-        <div class="flex items-center justify-between mb-3">
-          <h3 class="font-bold text-xl text-gray-800">Nasi Box Eksklusif</h3>
-          <span class="bg-[#fce4ec] text-[#b8326a] text-xs font-semibold px-2 py-1 rounded-full">Tanpa Daging</span>
-        </div>
-        
-        <!-- Pilihan Paket Nasi Box -->
-        <div class="mb-4">
-          <label class="text-xs font-semibold text-gray-600 block mb-2 flex items-center gap-1">
-            <i class="fas fa-tag text-[#d43f7a] text-[10px]"></i>
-            Pilih Varian Paket:
-          </label>
-          <select id="nasiBoxType" class="w-full border-2 border-pink-100 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-[#d43f7a] focus:ring-2 focus:ring-[#d43f7a]/20 transition-all bg-white cursor-pointer">
-            <option value="0">Paket 1 - Rp 13.000 (Box Eksklusif + Nasi + Kerupuk + Buah)</option>
-            <option value="1">Paket 2 - Rp 15.000 (+ Bihun Goreng)</option>
-            <option value="2">Paket 3 - Rp 18.000 (+ Sambel Kentang Ati)</option>
-            <option value="3">Paket 4 - Rp 19.000 (+ Telor Pindang)</option>
-            <option value="4">Paket 5 - Rp 21.000 (Lengkap)</option>
-            <option value="5">Paket 6 - Rp 22.000 (Nasi KEBULI Basmati)</option>
-          </select>
-        </div>
-        
-        <!-- Dynamic Content -->
-        <div class="bg-[#fce4ec]/30 rounded-xl p-3 mb-3">
-          <div class="flex justify-between items-center mb-2">
-            <span class="text-gray-700 text-sm font-semibold">Harga</span>
-            <span class="font-bold text-[#d43f7a] text-2xl" id="nasiPriceDisplay">Rp 13.000</span>
+      
+      <!-- Card Kiri: Nasi Box Reguler -->
+      <div class="bg-white rounded-2xl shadow-lg hover-lift border border-pink-100 overflow-hidden">
+        <div class="relative h-40 overflow-hidden">
+          <img src="image/nasibox_esklusif.png" 
+               alt="Nasi Box Eksklusif" 
+               class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3">
+            <span class="text-white text-xs font-semibold">🍱 Nasi Box Eksklusif</span>
           </div>
-          <div class="border-t border-pink-100 pt-2">
-            <p class="text-xs font-semibold text-gray-700 mb-1">📋 Detail Isi:</p>
-            <ul class="text-xs text-gray-600 space-y-0.5" id="menuDisplay">
-              <li>• Box Eksklusif</li>
-              <li>• Nasi putih</li>
-              <li>• Kerupuk Udang</li>
-              <li>• Buah</li>
-              <li>• Acar</li>
-              <li>• Sendok + Tisu</li>
-            </ul>
+          <div class="absolute top-3 right-3 bg-[#d43f7a]/90 backdrop-blur px-2 py-1 rounded-full">
+            <span class="text-white text-[10px] font-semibold"><i class="fas fa-leaf"></i> Eksklusif</span>
           </div>
         </div>
-        
-        <button id="waButtonNasi" class="w-full btn-elegant text-white font-semibold py-3 rounded-xl flex items-center justify-center gap-2 transition-all">
-          <i class="fab fa-whatsapp"></i> Pesan Sekarang
-        </button>
+        <div class="p-5">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-bold text-xl text-gray-800">Nasi Box Reguler</h3>
+            <span class="bg-[#fce4ec] text-[#b8326a] text-xs font-semibold px-2 py-1 rounded-full">Tanpa Daging</span>
+          </div>
+          
+          <!-- Pilihan Paket Nasi Box -->
+          <div class="mb-4">
+            <label class="text-xs font-semibold text-gray-600 block mb-2 flex items-center gap-1">
+              <i class="fas fa-tag text-[#d43f7a] text-[10px]"></i>
+              Pilih Varian Paket:
+            </label>
+            <select id="nasiBoxType" class="w-full border-2 border-pink-100 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-[#d43f7a] focus:ring-2 focus:ring-[#d43f7a]/20 transition-all bg-white cursor-pointer">
+              <option value="0">Paket 1 - Rp 13.000 (Box Eksklusif + Nasi + Kerupuk + Buah)</option>
+              <option value="1">Paket 2 - Rp 15.000 (+ Bihun Goreng)</option>
+              <option value="2">Paket 3 - Rp 18.000 (+ Sambel Kentang Ati)</option>
+              <option value="3">Paket 4 - Rp 19.000 (+ Telor Pindang)</option>
+              <option value="4">Paket 5 - Rp 21.000 (Lengkap)</option>
+              <option value="5">Paket 6 - Rp 22.000 (Nasi KEBULI Basmati)</option>
+            </select>
+          </div>
+          
+          <!-- Dynamic Content -->
+          <div class="bg-[#fce4ec]/30 rounded-xl p-3 mb-3">
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-gray-700 text-sm font-semibold">Harga</span>
+              <span class="font-bold text-[#d43f7a] text-2xl" id="nasiPriceDisplay">Rp 13.000</span>
+            </div>
+            <div class="border-t border-pink-100 pt-2">
+              <p class="text-xs font-semibold text-gray-700 mb-1">📋 Detail Isi:</p>
+              <ul class="text-xs text-gray-600 space-y-0.5" id="menuDisplay">
+                <li>• Box Eksklusif</li>
+                <li>• Nasi putih</li>
+                <li>• Kerupuk Udang</li>
+                <li>• Buah</li>
+                <li>• Acar</li>
+                <li>• Sendok + Tisu</li>
+              </ul>
+            </div>
+          </div>
+          
+          <button id="waButtonNasi" class="w-full btn-elegant text-white font-semibold py-3 rounded-xl flex items-center justify-center gap-2 transition-all">
+            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+          </button>
+        </div>
       </div>
     </div>
     
-    <!-- CARD KANAN: Nasi Box Ayam -->
-    <div class="bg-white rounded-2xl shadow-lg hover-lift border border-pink-100 overflow-hidden">
-      <div class="relative h-40 overflow-hidden">
-        <img src="image/ayam_bakar.jpeg" 
-             alt="Nasi Box Ayam Bakar" 
-             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-          <div class="flex items-center gap-2">
-            <i class="fas fa-fire text-amber-400 text-xs"></i>
-            <span class="text-white text-xs font-semibold">Ayam Bakar Spesial</span>
-          </div>
+    <!-- KOLOM KANAN: Nasi Box Ayam -->
+    <div>
+      <!-- Header Kanan -->
+      <div class="text-center mb-6">
+        <div class="flex items-center justify-center gap-3 mb-2">
+          <i class="fas fa-drumstick-bite text-[#d43f7a] text-2xl"></i>
+          <h2 class="text-2xl md:text-3xl font-serif-alt font-bold text-gray-800">Paket Nasi Box Ayam</h2>
         </div>
-        <div class="absolute top-3 right-3 bg-amber-500/90 backdrop-blur px-2 py-1 rounded-full">
-          <span class="text-white text-[10px] font-semibold"><i class="fas fa-star"></i> Best Menu</span>
-        </div>
+        <div class="w-24 h-0.5 bg-gradient-to-r from-[#d43f7a] to-[#e8669c] mx-auto rounded-full"></div>
+        <p class="text-sm text-gray-500 mt-2">🍗 Ayam Bakar Pilihan • Bumbu Spesial Rumahan</p>
       </div>
-      <div class="p-5">
-        <div class="flex items-center justify-between mb-3">
-          <h3 class="font-bold text-xl text-gray-800">Nasi Box Ayam + Sambal Ati</h3>
-          <span class="bg-[#fce4ec] text-[#b8326a] text-xs font-semibold px-2 py-1 rounded-full">🔥 Favorit</span>
-        </div>
-        
-        <!-- Pilihan Paket Nasi Box Ayam -->
-        <div class="mb-4">
-          <label class="text-xs font-semibold text-gray-600 block mb-2 flex items-center gap-1">
-            <i class="fas fa-tag text-[#d43f7a] text-[10px]"></i>
-            Pilih Varian Paket:
-          </label>
-          <select id="nasiAyamType" class="w-full border-2 border-pink-100 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-[#d43f7a] focus:ring-2 focus:ring-[#d43f7a]/20 transition-all bg-white cursor-pointer">
-            <option value="0">🐔 Paket 1 - Rp 23.000 (Ayam Bakar + Lalapan + Sambal)</option>
-            <option value="1">🐔 Paket 2 - Rp 26.000 (+ Buah Segar)</option>
-            <option value="2">🐔 Paket 3 - Rp 29.000 (+ Sambel Kentang Ati + Buah)</option>
-          </select>
-        </div>
-        
-        <!-- Dynamic Content -->
-        <div class="bg-[#fce4ec]/30 rounded-xl p-3 mb-3">
-          <div class="flex justify-between items-center mb-2">
-            <span class="text-gray-700 text-sm font-semibold">Harga</span>
-            <span class="font-bold text-[#d43f7a] text-2xl" id="nasiAyamPriceDisplay">Rp 23.000</span>
+      
+      <!-- Card Kanan: Nasi Box Ayam -->
+      <div class="bg-white rounded-2xl shadow-lg hover-lift border border-pink-100 overflow-hidden">
+        <div class="relative h-40 overflow-hidden">
+          <img src="image/ayam_bakar.jpeg" 
+               alt="Nasi Box Ayam Bakar" 
+               class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+            <div class="flex items-center gap-2">
+              <i class="fas fa-fire text-amber-400 text-xs"></i>
+              <span class="text-white text-xs font-semibold">Ayam Bakar Spesial</span>
+            </div>
           </div>
-          <div class="border-t border-pink-100 pt-2">
-            <p class="text-xs font-semibold text-gray-700 mb-1">📋 Detail Isi:</p>
-            <ul class="text-xs text-gray-600 space-y-0.5" id="nasiAyamMenuDisplay">
-              <li>• Box Eksklusif</li>
-              <li>• Nasi putih</li>
-              <li>• Ayam Bakar 1/4 ekor</li>
-              <li>• Lalapan</li>
-              <li>• Sambal</li>
-              <li>• Kerupuk Udang</li>
-              <li>• Sendok Tissu</li>
-            </ul>
+          <div class="absolute top-3 right-3 bg-amber-500/90 backdrop-blur px-2 py-1 rounded-full">
+            <span class="text-white text-[10px] font-semibold"><i class="fas fa-star"></i> Best Menu</span>
           </div>
         </div>
-        
-        <button id="waButtonNasiAyam" class="w-full btn-elegant text-white font-semibold py-3 rounded-xl flex items-center justify-center gap-2 transition-all">
-          <i class="fab fa-whatsapp"></i> Pesan Sekarang
-        </button>
+        <div class="p-5">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-bold text-xl text-gray-800">Nasi Box Ayam + Sambal Ati</h3>
+            <span class="bg-[#fce4ec] text-[#b8326a] text-xs font-semibold px-2 py-1 rounded-full">🔥 Favorit</span>
+          </div>
+          
+          <!-- Pilihan Paket Nasi Box Ayam -->
+          <div class="mb-4">
+            <label class="text-xs font-semibold text-gray-600 block mb-2 flex items-center gap-1">
+              <i class="fas fa-tag text-[#d43f7a] text-[10px]"></i>
+              Pilih Varian Paket:
+            </label>
+            <select id="nasiAyamType" class="w-full border-2 border-pink-100 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-[#d43f7a] focus:ring-2 focus:ring-[#d43f7a]/20 transition-all bg-white cursor-pointer">
+              <option value="0">🐔 Paket 1 - Rp 23.000 (Ayam Bakar + Lalapan + Sambal)</option>
+              <option value="1">🐔 Paket 2 - Rp 26.000 (+ Buah Segar)</option>
+              <option value="2">🐔 Paket 3 - Rp 29.000 (+ Sambel Kentang Ati + Buah)</option>
+            </select>
+          </div>
+          
+          <!-- Dynamic Content -->
+          <div class="bg-[#fce4ec]/30 rounded-xl p-3 mb-3">
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-gray-700 text-sm font-semibold">Harga</span>
+              <span class="font-bold text-[#d43f7a] text-2xl" id="nasiAyamPriceDisplay">Rp 23.000</span>
+            </div>
+            <div class="border-t border-pink-100 pt-2">
+              <p class="text-xs font-semibold text-gray-700 mb-1">📋 Detail Isi:</p>
+              <ul class="text-xs text-gray-600 space-y-0.5" id="nasiAyamMenuDisplay">
+                <li>• Box Eksklusif</li>
+                <li>• Nasi putih</li>
+                <li>• Ayam Bakar 1/4 ekor</li>
+                <li>• Lalapan</li>
+                <li>• Sambal</li>
+                <li>• Kerupuk Udang</li>
+                <li>• Sendok Tissu</li>
+              </ul>
+            </div>
+          </div>
+          
+          <button id="waButtonNasiAyam" class="w-full btn-elegant text-white font-semibold py-3 rounded-xl flex items-center justify-center gap-2 transition-all">
+            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+          </button>
+        </div>
       </div>
     </div>
     
