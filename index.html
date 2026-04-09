@@ -917,9 +917,13 @@
 
 
 
-  <!-- Paket Nasi Box Section -->
+  <!-- Paket Nasi Box (Non Ayam) & Nasi Box Ayam - Side by Side -->
 <section id="nasi-box" class="mb-12 scroll-mt-28">
-  <div class="text-center mb-8">
+  <!-- Header Paket Nasi Box & Nasi Box Ayam - Side by Side -->
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  
+  <!-- Judul Kiri: Nasi Box Reguler -->
+  <div class="text-center">
     <div class="flex items-center justify-center gap-3 mb-2">
       <i class="fas fa-box-open text-[#d43f7a] text-2xl"></i>
       <h2 class="text-2xl md:text-3xl font-serif-alt font-bold text-gray-800">Paket Nasi Box</h2>
@@ -928,21 +932,37 @@
     <p class="text-sm text-gray-500 mt-2">*belum termasuk masakan kambing</p>
   </div>
   
+  <!-- Judul Kanan: Nasi Box Ayam -->
+  <div class="text-center">
+    <div class="flex items-center justify-center gap-3 mb-2">
+      <i class="fas fa-drumstick-bite text-[#d43f7a] text-2xl"></i>
+      <h2 class="text-2xl md:text-3xl font-serif-alt font-bold text-gray-800">Paket Nasi Box Ayam</h2>
+    </div>
+    <div class="w-24 h-0.5 bg-gradient-to-r from-[#d43f7a] to-[#e8669c] mx-auto rounded-full"></div>
+    <p class="text-sm text-gray-500 mt-2">🍗 Ayam Bakar Pilihan • Bumbu Spesial Rumahan</p>
+  </div>
+  
+</div>
+  
   <div class="grid md:grid-cols-2 gap-6">
-    <!-- Card Nasi Box 1 -->
+    
+    <!-- CARD KIRI: Nasi Box Reguler (Non Ayam) -->
     <div class="bg-white rounded-2xl shadow-lg hover-lift border border-pink-100 overflow-hidden">
       <div class="relative h-40 overflow-hidden">
         <img src="image/nasibox_esklusif.png" 
-             alt="Nasi Box Spesial" 
+             alt="Nasi Box Eksklusif" 
              class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3">
           <span class="text-white text-xs font-semibold">🍱 Nasi Box Eksklusif</span>
         </div>
+        <div class="absolute top-3 right-3 bg-[#d43f7a]/90 backdrop-blur px-2 py-1 rounded-full">
+          <span class="text-white text-[10px] font-semibold"><i class="fas fa-leaf"></i> Eksklusif</span>
+        </div>
       </div>
       <div class="p-5">
         <div class="flex items-center justify-between mb-3">
-          <h3 class="font-bold text-xl text-gray-800">Nasi Box Eksklusif</h3>
-          <span class="bg-[#fce4ec] text-[#b8326a] text-xs font-semibold px-2 py-1 rounded-full">Varian 1</span>
+          <h3 class="font-bold text-xl text-gray-800">Nasi Box Reguler</h3>
+          <span class="bg-[#fce4ec] text-[#b8326a] text-xs font-semibold px-2 py-1 rounded-full">Tanpa Daging</span>
         </div>
         
         <!-- Pilihan Paket Nasi Box -->
@@ -986,81 +1006,9 @@
       </div>
     </div>
     
-    <!-- Card Nasi Box 2 -->
+    <!-- CARD KANAN: Nasi Box Ayam -->
     <div class="bg-white rounded-2xl shadow-lg hover-lift border border-pink-100 overflow-hidden">
       <div class="relative h-40 overflow-hidden">
-        <img src="image/nasi_spesial.png" 
-             alt="Nasi Box Premium" 
-             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3">
-          <span class="text-white text-xs font-semibold">🍱 Nasi Box Premium</span>
-        </div>
-      </div>
-      <div class="p-5">
-        <div class="flex items-center justify-between mb-3">
-          <h3 class="font-bold text-xl text-gray-800">Nasi Box Spesial</h3>
-          <span class="bg-[#fce4ec] text-[#b8326a] text-xs font-semibold px-2 py-1 rounded-full">Best Value</span>
-        </div>
-        
-        <!-- Pilihan Paket Nasi Box 2 -->
-        <div class="mb-4">
-          <label class="text-xs font-semibold text-gray-600 block mb-2 flex items-center gap-1">
-            <i class="fas fa-tag text-[#d43f7a] text-[10px]"></i>
-            Pilih Varian Paket:
-          </label>
-          <select id="nasiBoxType2" class="w-full border-2 border-pink-100 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-[#d43f7a] focus:ring-2 focus:ring-[#d43f7a]/20 transition-all bg-white cursor-pointer">
-            <option value="0">Paket 1 - Rp 13.000 (Box Eksklusif + Nasi + Kerupuk + Buah)</option>
-            <option value="1">Paket 2 - Rp 15.000 (+ Bihun Goreng)</option>
-            <option value="2">Paket 3 - Rp 18.000 (+ Sambel Kentang Ati)</option>
-            <option value="3">Paket 4 - Rp 19.000 (+ Telor Pindang)</option>
-            <option value="4">Paket 5 - Rp 21.000 (Lengkap)</option>
-            <option value="5">Paket 6 - Rp 22.000 (Nasi KEBULI Basmati)</option>
-          </select>
-        </div>
-        
-        <!-- Dynamic Content -->
-        <div class="bg-[#fce4ec]/30 rounded-xl p-3 mb-3">
-          <div class="flex justify-between items-center mb-2">
-            <span class="text-gray-700 text-sm font-semibold">Harga</span>
-            <span class="font-bold text-[#d43f7a] text-2xl" id="nasiPriceDisplay2">Rp 13.000</span>
-          </div>
-          <div class="border-t border-pink-100 pt-2">
-            <p class="text-xs font-semibold text-gray-700 mb-1">📋 Detail Isi:</p>
-            <ul class="text-xs text-gray-600 space-y-0.5" id="menuDisplay2">
-              <li>• Box Eksklusif</li>
-              <li>• Nasi putih</li>
-              <li>• Kerupuk Udang</li>
-              <li>• Buah</li>
-              <li>• Acar</li>
-              <li>• Sendok + Tisu</li>
-            </ul>
-          </div>
-        </div>
-        
-        <button id="waButtonNasi2" class="w-full btn-elegant text-white font-semibold py-3 rounded-xl flex items-center justify-center gap-2 transition-all">
-          <i class="fab fa-whatsapp"></i> Pesan Sekarang
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Paket Nasi Box Ayam Section -->
-<section id="nasi-box-ayam" class="mb-12 scroll-mt-28">
-  <div class="text-center mb-8">
-    <div class="flex items-center justify-center gap-3 mb-2">
-      <i class="fas fa-drumstick-bite text-[#d43f7a] text-2xl"></i>
-      <h2 class="text-2xl md:text-3xl font-serif-alt font-bold text-gray-800">Paket Nasi Box Ayam</h2>
-    </div>
-    <div class="w-24 h-0.5 bg-gradient-to-r from-[#d43f7a] to-[#e8669c] mx-auto rounded-full"></div>
-    <p class="text-sm text-gray-500 mt-2">🍗 Ayam Bakar Pilihan • Bumbu Spesial Rumahan</p>
-  </div>
-  
-  <div class="grid md:grid-cols-2 gap-6">
-    <!-- Card Nasi Box Ayam 1 -->
-    <div class="bg-white rounded-2xl shadow-lg hover-lift border border-pink-100 overflow-hidden">
-      <div class="relative h-44 overflow-hidden">
         <img src="image/ayam_bakar.jpeg" 
              alt="Nasi Box Ayam Bakar" 
              class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
@@ -1076,7 +1024,7 @@
       </div>
       <div class="p-5">
         <div class="flex items-center justify-between mb-3">
-          <h3 class="font-bold text-xl text-gray-800">Nasi Box Ayam Bakar</h3>
+          <h3 class="font-bold text-xl text-gray-800">Nasi Box Ayam + Sambal Ati</h3>
           <span class="bg-[#fce4ec] text-[#b8326a] text-xs font-semibold px-2 py-1 rounded-full">🔥 Favorit</span>
         </div>
         
@@ -1086,7 +1034,7 @@
             <i class="fas fa-tag text-[#d43f7a] text-[10px]"></i>
             Pilih Varian Paket:
           </label>
-          <select id="nasiAyamType" class="w-full border-2 border-pink-100 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:border-[#d43f7a] focus:ring-2 focus:ring-[#d43f7a]/20 transition-all bg-white cursor-pointer">
+          <select id="nasiAyamType" class="w-full border-2 border-pink-100 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-[#d43f7a] focus:ring-2 focus:ring-[#d43f7a]/20 transition-all bg-white cursor-pointer">
             <option value="0">🐔 Paket 1 - Rp 23.000 (Ayam Bakar + Lalapan + Sambal)</option>
             <option value="1">🐔 Paket 2 - Rp 26.000 (+ Buah Segar)</option>
             <option value="2">🐔 Paket 3 - Rp 29.000 (+ Sambel Kentang Ati + Buah)</option>
@@ -1119,68 +1067,12 @@
       </div>
     </div>
     
-    <!-- Card Nasi Box Ayam 2 -->
-    <div class="bg-white rounded-2xl shadow-lg hover-lift border border-pink-100 overflow-hidden">
-      <div class="relative h-44 overflow-hidden">
-        <img src="image/ayam_semangka.jpeg" 
-             alt="Nasi Box Ayam Bakar Premium" 
-             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-          <div class="flex items-center gap-2">
-            <i class="fas fa-crown text-amber-400 text-xs"></i>
-            <span class="text-white text-xs font-semibold">Paket Premium</span>
-          </div>
-        </div>
-        <div class="absolute top-3 right-3 bg-[#d43f7a]/90 backdrop-blur px-2 py-1 rounded-full">
-          <span class="text-white text-[10px] font-semibold"><i class="fas fa-gem"></i> Value Plus</span>
-        </div>
-      </div>
-      <div class="p-5">
-        <div class="flex items-center justify-between mb-3">
-          <h3 class="font-bold text-xl text-gray-800">Nasi Box Ayam + Ati</h3>
-          <span class="bg-[#fce4ec] text-[#b8326a] text-xs font-semibold px-2 py-1 rounded-full">⭐ Best Value</span>
-        </div>
-        
-        <!-- Pilihan Paket Nasi Box Ayam 2 -->
-        <div class="mb-4">
-          <label class="text-xs font-semibold text-gray-600 block mb-2 flex items-center gap-1">
-            <i class="fas fa-tag text-[#d43f7a] text-[10px]"></i>
-            Pilih Varian Paket:
-          </label>
-          <select id="nasiAyamType2" class="w-full border-2 border-pink-100 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:border-[#d43f7a] focus:ring-2 focus:ring-[#d43f7a]/20 transition-all bg-white cursor-pointer">
-            <option value="0">🐔 Paket 1 - Rp 23.000 (Ayam Bakar + Lalapan + Sambal)</option>
-            <option value="1">🐔 Paket 2 - Rp 26.000 (+ Buah Segar)</option>
-            <option value="2">🐔 Paket 3 - Rp 29.000 (+ Sambel Kentang Ati + Buah)</option>
-          </select>
-        </div>
-        
-        <!-- Dynamic Content -->
-        <div class="bg-[#fce4ec]/30 rounded-xl p-3 mb-3">
-          <div class="flex justify-between items-center mb-2">
-            <span class="text-gray-700 text-sm font-semibold">Harga</span>
-            <span class="font-bold text-[#d43f7a] text-2xl" id="nasiAyamPriceDisplay2">Rp 23.000</span>
-          </div>
-          <div class="border-t border-pink-100 pt-2">
-            <p class="text-xs font-semibold text-gray-700 mb-1">📋 Detail Isi:</p>
-            <ul class="text-xs text-gray-600 space-y-0.5" id="nasiAyamMenuDisplay2">
-              <li>• Box Eksklusif</li>
-              <li>• Nasi putih</li>
-              <li>• Ayam Bakar 1/4 ekor</li>
-              <li>• Lalapan</li>
-              <li>• Sambal</li>
-              <li>• Kerupuk Udang</li>
-              <li>• Sendok Tissu</li>
-            </ul>
-          </div>
-        </div>
-        
-        <button id="waButtonNasiAyam2" class="w-full btn-elegant text-white font-semibold py-3 rounded-xl flex items-center justify-center gap-2 transition-all">
-          <i class="fab fa-whatsapp"></i> Pesan Sekarang
-        </button>
-      </div>
-    </div>
   </div>
 </section>
+
+
+
+
   
 
   <!-- Testimoni -->
@@ -1779,32 +1671,21 @@ document.getElementById('waButton3').addEventListener('click', sendToWhatsApp3);
 updateDisplay3();
 
 
-// Data Nasi Box berdasarkan JSON
+// Data Nasi Box Reguler
 const nasiBoxData = [
-  {
-    price: 13000,
-    menu: ["Box Eksklusif", "Nasi putih", "Kerupuk Udang", "Buah", "Acar", "Sendok Tissu"]
-  },
-  {
-    price: 15000,
-    menu: ["Box Eksklusif", "Nasi putih", "Bihun Goreng", "Kerupuk Udang", "Buah", "Sendok Tissu"]
-  },
-  {
-    price: 18000,
-    menu: ["Box Eksklusif", "Nasi putih", "Bihun Goreng", "Sambel Kentang Ati", "Kerupuk Udang", "Buah", "Sendok Tissu"]
-  },
-  {
-    price: 19000,
-    menu: ["Box Eksklusif", "Nasi putih", "Sambel Kentang Ati", "Telor Pindang", "Kerupuk Udang", "Buah", "Sendok Tissu"]
-  },
-  {
-    price: 21000,
-    menu: ["Box Eksklusif", "Nasi putih", "Bihun Goreng", "Sambel Kentang Ati", "Telor Pindang", "Kerupuk Udang", "Buah", "Sendok Tissu"]
-  },
-  {
-    price: 22000,
-    menu: ["Box Eksklusif", "Nasi KEBULI Basmati", "Krupuk Udang", "Buah", "Acar Merah", "Sendok Tissu"]
-  }
+  { price: 13000, menu: ["Box Eksklusif", "Nasi putih", "Kerupuk Udang", "Buah", "Acar", "Sendok Tissu"] },
+  { price: 15000, menu: ["Box Eksklusif", "Nasi putih", "Bihun Goreng", "Kerupuk Udang", "Buah", "Sendok Tissu"] },
+  { price: 18000, menu: ["Box Eksklusif", "Nasi putih", "Bihun Goreng", "Sambel Kentang Ati", "Kerupuk Udang", "Buah", "Sendok Tissu"] },
+  { price: 19000, menu: ["Box Eksklusif", "Nasi putih", "Sambel Kentang Ati", "Telor Pindang", "Kerupuk Udang", "Buah", "Sendok Tissu"] },
+  { price: 21000, menu: ["Box Eksklusif", "Nasi putih", "Bihun Goreng", "Sambel Kentang Ati", "Telor Pindang", "Kerupuk Udang", "Buah", "Sendok Tissu"] },
+  { price: 22000, menu: ["Box Eksklusif", "Nasi KEBULI Basmati", "Krupuk Udang", "Buah", "Acar Merah", "Sendok Tissu"] }
+];
+
+// Data Nasi Box Ayam
+const nasiAyamData = [
+  { price: 23000, menu: ["Box Eksklusif", "Nasi putih", "Ayam Bakar 1/4 ekor", "Lalapan", "Sambal", "Kerupuk Udang", "Sendok Tissu"] },
+  { price: 26000, menu: ["Box Eksklusif", "Nasi putih", "Ayam Bakar 1/4 ekor", "Lalapan", "Sambal", "Kerupuk Udang", "Buah", "Sendok Tissu"] },
+  { price: 29000, menu: ["Box Eksklusif", "Nasi putih", "Ayam Bakar 1/4 ekor", "Sambel kentang ati", "Lalapan", "Sambal", "Kerupuk Udang", "Buah", "Sendok Tissu"] }
 ];
 
 // Format Rupiah
@@ -1817,167 +1698,68 @@ function formatRupiah(angka) {
   }).format(angka);
 }
 
-// Function to update menu display
+// Update menu display helper
 function updateMenuDisplay(menuList, elementId) {
   const container = document.getElementById(elementId);
-  if (!container) return;
-  container.innerHTML = menuList.map(item => `<li>• ${item}</li>`).join('');
+  if (container) {
+    container.innerHTML = menuList.map(item => `<li>• ${item}</li>`).join('');
+  }
 }
 
-// Function for Nasi Box 1
-function updateNasiBox1() {
+// Update Nasi Box Reguler
+function updateNasiBox() {
   const select = document.getElementById('nasiBoxType');
+  if (!select) return;
   const index = parseInt(select.value);
   const data = nasiBoxData[index];
-  
   document.getElementById('nasiPriceDisplay').innerHTML = formatRupiah(data.price);
   updateMenuDisplay(data.menu, 'menuDisplay');
 }
 
-// Function for Nasi Box 2
-function updateNasiBox2() {
-  const select = document.getElementById('nasiBoxType2');
+// Update Nasi Box Ayam
+function updateNasiAyam() {
+  const select = document.getElementById('nasiAyamType');
+  if (!select) return;
   const index = parseInt(select.value);
-  const data = nasiBoxData[index];
-  
-  document.getElementById('nasiPriceDisplay2').innerHTML = formatRupiah(data.price);
-  updateMenuDisplay(data.menu, 'menuDisplay2');
+  const data = nasiAyamData[index];
+  document.getElementById('nasiAyamPriceDisplay').innerHTML = formatRupiah(data.price);
+  updateMenuDisplay(data.menu, 'nasiAyamMenuDisplay');
 }
 
-// Generate WhatsApp message for Nasi Box
-function generateWaMessageNasi(selectId, boxNumber) {
-  const select = document.getElementById(selectId);
+// Generate WA Message
+function generateWaMessageNasi() {
+  const select = document.getElementById('nasiBoxType');
   const index = parseInt(select.value);
   const data = nasiBoxData[index];
-  const paketNumber = index + 1;
-  
   const menuText = data.menu.map(item => `   • ${item}`).join('\n');
-  
-  const message = `Halo Kak, saya mau pesan PAKET NASI BOX EKSKLUSIF dengan detail:
-
-📦 Paket ${paketNumber}
-💰 Harga: ${formatRupiah(data.price)}
-📋 Detail Isi:
-${menuText}
-
-Mohon info lebih lanjut untuk proses pemesanan. Terima kasih! 🙏`;
-  
-  return encodeURIComponent(message);
+  return encodeURIComponent(`Halo Kak, saya mau pesan PAKET NASI BOX REGULER dengan detail:\n\n📦 Paket ${index + 1}\n💰 Harga: ${formatRupiah(data.price)}\n📋 Detail Isi:\n${menuText}\n\nMohon info lebih lanjut. Terima kasih! 🙏`);
 }
 
-// WhatsApp link generator
-function sendToWhatsAppNasi(selectId, boxNumber) {
-  const phoneNumber = "6281293392329";
-  const message = generateWaMessageNasi(selectId, boxNumber);
-  const waLink = `https://wa.me/${phoneNumber}?text=${message}`;
-  window.open(waLink, '_blank');
-}
-
-// Event listeners for Nasi Box 1
-if (document.getElementById('nasiBoxType')) {
-  document.getElementById('nasiBoxType').addEventListener('change', updateNasiBox1);
-  document.getElementById('waButtonNasi').addEventListener('click', () => sendToWhatsAppNasi('nasiBoxType', 1));
-  updateNasiBox1();
-}
-
-// Event listeners for Nasi Box 2
-if (document.getElementById('nasiBoxType2')) {
-  document.getElementById('nasiBoxType2').addEventListener('change', updateNasiBox2);
-  document.getElementById('waButtonNasi2').addEventListener('click', () => sendToWhatsAppNasi('nasiBoxType2', 2));
-  updateNasiBox2();
-}
-
-
-// Data Nasi Box Ayam berdasarkan JSON
-const nasiAyamData = [
-  {
-    price: 23000,
-    menu: ["Box Eksklusif", "Nasi putih", "Ayam Bakar 1/4 ekor", "Lalapan", "Sambal", "Kerupuk Udang", "Sendok Tissu"]
-  },
-  {
-    price: 26000,
-    menu: ["Box Eksklusif", "Nasi putih", "Ayam Bakar 1/4 ekor", "Lalapan", "Sambal", "Kerupuk Udang", "Buah", "Sendok Tissu"]
-  },
-  {
-    price: 29000,
-    menu: ["Box Eksklusif", "Nasi putih", "Ayam Bakar 1/4 ekor", "Sambel kentang ati", "Lalapan", "Sambal", "Kerupuk Udang", "Buah", "Sendok Tissu"]
-  }
-];
-
-// Function to update menu display
-function updateMenuDisplayAyam(menuList, elementId) {
-  const container = document.getElementById(elementId);
-  if (!container) return;
-  container.innerHTML = menuList.map(item => `<li>• ${item}</li>`).join('');
-}
-
-// Function for Nasi Ayam 1
-function updateNasiAyam1() {
+function generateWaMessageNasiAyam() {
   const select = document.getElementById('nasiAyamType');
   const index = parseInt(select.value);
   const data = nasiAyamData[index];
-  
-  document.getElementById('nasiAyamPriceDisplay').innerHTML = formatRupiah(data.price);
-  updateMenuDisplayAyam(data.menu, 'nasiAyamMenuDisplay');
-}
-
-// Function for Nasi Ayam 2
-function updateNasiAyam2() {
-  const select = document.getElementById('nasiAyamType2');
-  const index = parseInt(select.value);
-  const data = nasiAyamData[index];
-  
-  document.getElementById('nasiAyamPriceDisplay2').innerHTML = formatRupiah(data.price);
-  updateMenuDisplayAyam(data.menu, 'nasiAyamMenuDisplay2');
-}
-
-// Generate WhatsApp message for Nasi Ayam
-function generateWaMessageNasiAyam(selectId) {
-  const select = document.getElementById(selectId);
-  const index = parseInt(select.value);
-  const data = nasiAyamData[index];
-  const paketNumber = index + 1;
-  
-  let paketName = "";
-  if (paketNumber === 1) paketName = "Ayam Bakar + Lalapan";
-  else if (paketNumber === 2) paketName = "Ayam Bakar + Buah";
-  else paketName = "Ayam Bakar + Ati + Buah";
-  
   const menuText = data.menu.map(item => `   • ${item}`).join('\n');
-  
-  const message = `Halo Kak, saya mau pesan PAKET NASI BOX AYAM dengan detail:
-
-🍗 Paket ${paketNumber} - ${paketName}
-💰 Harga: ${formatRupiah(data.price)}
-📋 Detail Isi:
-${menuText}
-
-Mohon info lebih lanjut untuk proses pemesanan. Terima kasih! 🙏`;
-  
-  return encodeURIComponent(message);
+  return encodeURIComponent(`Halo Kak, saya mau pesan PAKET NASI BOX AYAM dengan detail:\n\n🍗 Paket ${index + 1}\n💰 Harga: ${formatRupiah(data.price)}\n📋 Detail Isi:\n${menuText}\n\nMohon info lebih lanjut. Terima kasih! 🙏`);
 }
 
-// WhatsApp link generator for Nasi Ayam
-function sendToWhatsAppNasiAyam(selectId) {
+function sendToWhatsApp(generator) {
   const phoneNumber = "6281293392329";
-  const message = generateWaMessageNasiAyam(selectId);
-  const waLink = `https://wa.me/${phoneNumber}?text=${message}`;
-  window.open(waLink, '_blank');
+  window.open(`https://wa.me/${phoneNumber}?text=${generator()}`, '_blank');
 }
 
-// Event listeners for Nasi Ayam 1
-if (document.getElementById('nasiAyamType')) {
-  document.getElementById('nasiAyamType').addEventListener('change', updateNasiAyam1);
-  document.getElementById('waButtonNasiAyam').addEventListener('click', () => sendToWhatsAppNasiAyam('nasiAyamType'));
-  updateNasiAyam1();
-}
+// Event Listeners
+document.getElementById('nasiBoxType')?.addEventListener('change', updateNasiBox);
+document.getElementById('waButtonNasi')?.addEventListener('click', () => sendToWhatsApp(generateWaMessageNasi));
+document.getElementById('nasiAyamType')?.addEventListener('change', updateNasiAyam);
+document.getElementById('waButtonNasiAyam')?.addEventListener('click', () => sendToWhatsApp(generateWaMessageNasiAyam));
 
-// Event listeners for Nasi Ayam 2
-if (document.getElementById('nasiAyamType2')) {
-  document.getElementById('nasiAyamType2').addEventListener('change', updateNasiAyam2);
-  document.getElementById('waButtonNasiAyam2').addEventListener('click', () => sendToWhatsAppNasiAyam('nasiAyamType2'));
-  updateNasiAyam2();
-}
+// Initialize
+updateNasiBox();
+updateNasiAyam();
+
+
+
 // Fungsi untuk membuka popup
 function openPopup(imgSrc, title, desc) {
   const popup = document.getElementById('imagePopup');
